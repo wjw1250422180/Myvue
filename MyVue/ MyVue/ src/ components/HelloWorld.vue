@@ -675,10 +675,9 @@ export default {
         }
       } else {
         //按下左键向前面的input聚焦
-        if (index != 0) {
+        if（index！= 0）{
           //要判断当前（最后）输入框，否则会报错
-          lastInput.focus()
-        }
+一世 }
       }
       if (el.keyCode == 37) {
         lastInput.focus()
