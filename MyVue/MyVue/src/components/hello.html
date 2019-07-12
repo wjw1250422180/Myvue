@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html lang='en'>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../node_modules/vue/dist/vue.min.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="first">
+            <img src="../image/1.png" class="imge">
+            <text class="title">小巨靓号</text>
+            <text class="choose">手机选号</text>
+        </div>
+        <div class="second">
+            <text class="smalltitle">号码交易，尽在小巨</text>
+            <input v-model="poin">
+        </div>
+        <div class="third">
+
+        </div>
+    </div>
+    <script>
+        var vue = new Vue({
+            el: '.container',
+            data: {},
+            methods: {}
+        });
+    </script>
+</body>
+
+</html>
+
+<style>
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .first {
+        display: flex;
+        flex-direction: row;
+        background-color: rgb(51, 50, 50);
+    }
+
+    .imge {
+        width: 100px;
+        height: 70px;
+        margin-left: 30px;
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+
+    .title {
+        font-size: 30px;
+        color: white;
+        margin-left: 10px;
+        margin-top: 25px;
+        margin-bottom: 10px;
+    }
+
+    .choose {
+        font-size: 20px;
+        color: white;
+        margin-left: 1500px;
+        margin-top: 33px;
+        margin-bottom: 10px;
+
+    }
+
+    .second {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .smalltitle {
+        font-size: 30px;
+        color: rgb(83, 6, 6);
+        font-weight: bold;
+        margin-left: 50px;
+        margin-top: 50px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+</style>
